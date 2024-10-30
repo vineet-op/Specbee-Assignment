@@ -1,0 +1,267 @@
+/* Existing styles */
+
+@font-face {
+  font-family: Metropolis;
+  src: url(/Demo/fonts/Metropolis-Regular.otf);
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px; 
+}
+
+.text-op{
+  color: rgba(0, 63, 180, 1);
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px; 
+  left: 120px;
+  height: 64px;
+}
+
+.content-container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px; /* Sets a more compact line height */
+  font-family: Metropolis;
+  
+}
+
+.content-container p {
+  font-family: Metropolis;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px; /* Adjust for a more compact layout */
+  margin: 0; /* Removes any default margin */
+}
+
+
+.speakers {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.speakers-slider {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.speaker-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  height: 321px;
+  width: 285px;
+  border-radius: 10px;
+  padding: 36px 21px 36px 21px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.speaker-card h2 , p , span {
+  font-family:Metropolis ;
+}
+
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Increased height */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.button-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+  top: 12px; /* Position text slightly above and to the left */
+  left: -210px;
+  width: 150px;
+  height: 42px;
+}
+
+.cta-button {
+  cursor: pointer;
+  background-color: rgba(0, 63, 180, 1);
+  width: 405px;
+  height: 58px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+.button-icon {
+  width: 140px;
+  height: 51px;
+  margin-top: 10px; 
+  opacity: 1;
+  position: relative;
+  left: -230px; 
+}
+
+
+
+/* Modal styling */
+.modal {
+  font-family: Metropolis;
+  position: relative;
+  margin-top: 11%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: white;
+  padding: 36px 30px;
+  border-radius: 10px 0px 0px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  gap: 16px;
+  display: none; 
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  width: Hug (368px)px;
+  height: Hug (150px)px;
+  gap: 16px;
+
+}
+
+.modal-header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#modal-name{
+  padding: 5px;
+  size: 24px;
+  font-weight: 700;
+}
+
+
+#modal-title{
+  padding: 5px;
+  size: 18px;
+  font-weight: 600px;
+}
+
+#modal-company{
+  padding: 5px;
+  size: 16px;
+  font-weight: 400px;
+}
+
+#modal-description{
+  width: 732px;
+  height: 96px;
+  font-family: Lora;
+  font-weight: 400px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.socials{
+  display: flex;
+  width: 102px;
+  height: 24px;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+
+.socials img{
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal h2, .modal p, .modal span {
+  margin: 0;
+
+}
+
+.modal-description {
+  margin-top: 15px;
+}
+/* Additional spacing for the speaker cards to avoid overlapping the modal */
+
+
+@media (max-width: 768px){
+
+
+  .speakers-slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .modal{
+    margin-top: 60%;
+  }
+
+  .button-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button-icon{
+    opacity: 0;
+  }
+
+}

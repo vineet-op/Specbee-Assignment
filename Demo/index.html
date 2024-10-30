@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Speakers</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="content-container">
+    <h1>View our Featured Speakers for the Event</h1>
+    <div>Speakers are core contributors and industry thought leaders working at <span class="text-op">
+        companies
+      </span> that push for innovation.
+    </div>
+  </div>
+
+  <div class="modal hidden" id="speakerModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <img id="modal-image" src="" alt="Speaker Image">
+        <div>
+          <h2 id="modal-name">Speaker Name</h2>
+          <p id="modal-title">Speaker Title</p>
+          <span id="modal-company">Company Name</span>
+          <div class="socials">
+            <img src="/Demo/images/Flame.png" alt="Flame">
+            <img src="/Demo/images/twt.png" alt="Twitter">
+            <img src="/Demo/images/linkedin.png" alt="Linkedin">
+          </div>
+        </div>
+      </div>
+      <p id="modal-description">Speaker description goes here...</p>
+    </div>
+  </div>
+
+
+  <section class="speakers">
+    <div class="speakers-slider">
+      <div class="speaker-card" data-index="0">
+        <img src="/Demo/images/img1.png" alt="Speaker 1">
+        <h2>John Doe</h2>
+        <p>Chief Marketing Officer</p>
+        <span>Acme Corp</span>
+      </div>
+      <div class="speaker-card" data-index="1">
+        <img src="/Demo/images/img2.png" alt="Speaker 2">
+        <h2>Jane Smith</h2>
+        <p>Chief Engagement Officer</p>
+        <span>Specbee</span>
+      </div>
+      <div class="speaker-card" data-index="2">
+        <img src="/Demo/images/img3.png" alt="Speaker 3">
+        <h2>John Doe</h2>
+        <p>Chief Marketing Officer</p>
+        <span>Acme Corp</span>
+      </div>
+      <div class="speaker-card" data-index="3">
+        <img src="/Demo/images/img4.png" alt="Speaker 4">
+        <h2>John Doe</h2>
+        <p>Chief Marketing Officer</p>
+        <span>Specbee</span>
+      </div>
+      <!-- Add more speaker cards as needed -->
+    </div>
+
+    <div class="button-wrapper">
+      <div class="button-container">
+        <p class="button-text">Click here to see the full program</p>
+        <button class="cta-button">See the Program</button>
+        <img src="/Demo/images/Arrow.png" alt="Arrow icon" class="button-icon">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Pre-rendered modal structure -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
